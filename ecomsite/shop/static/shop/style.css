@@ -1,0 +1,17 @@
+.card-text {
+    color: green;
+    font-weight:600;
+}
+
+.navbar-brand {
+    font-weight: 900;
+}
+
+.card-title {
+    font-weight: 900;
+}
+
+.roll_button
+{
+    margin-top: 140px;
+}
