@@ -62,7 +62,7 @@
         <div class="row">
             {% for product in product_objects %}
             <div class="col-md-3">
-                <div class="card shadow" style=" height:450px; width:250px; margin-top:10px">
+                <div class="card shadow rounded" style=" height:450px; width:250px; margin-top:10px">
                     <img src="{{ product.image }}"  class="card-img-top" style="height:275px; width:220px;">
                     <div class="card-body">
                         <div id="nm{{product.id}}" class="card-title">{{ product.title }}</div>
