@@ -76,7 +76,18 @@
             {% endfor %}
         </div>
         <br><br><br>
-        <div class="row">
+
+        <div class="d-flex flex-row justify-content-center pagination">
+            {% if product_objects.has_previous %}
+            <div class="p-4"><a class="btn btn-outline-primary" href="?page={{ product_objects.previous_page_number }}">Previous</a></div>
+            {% endif %}
+            <div class="p-4"><a class="btn btn-outline-dark" href="?page={{ product_objects.number }}">{{ product_objects.number }}</a></div>
+            {% if product_objects.has_next %}
+            <div class="p-4"><a class=" btn btn-outline-primary" href="?page={{ product_objects.next_page_number }}">Next</a></div>
+            {% endif %}
+          </div>
+
+        <!-- <div class="row">
             <div class="col-md-3 offset-3 roll_button">
                 <ul class="pagination">
                     {% if product_objects.has_previous %}
@@ -86,7 +97,7 @@
                     {% endif %}
 
                     <li class="page-item active">
-                        <a class="page-link" href="?page={{ product_objects.number }}">Current</a>
+                        <a class="page-link" href="?page={{ product_objects.number }}">{{ product_objects.number }}</a>
                     </li>
 
                     {% if product_objects.has_next %}
@@ -96,7 +107,7 @@
                     {% endif %}
                 </ul>
             </div>
-        </div>
+        </div> -->
 
     </div>
 
