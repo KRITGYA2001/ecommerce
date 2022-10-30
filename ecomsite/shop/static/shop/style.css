@@ -24,6 +24,7 @@
 
 
 footer{
+    overflow: visible;
     margin-top: 10%;
     height: 100%;
     padding: 20px;
